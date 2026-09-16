@@ -1,0 +1,7 @@
+========== NOVO CADASTRO ==========
+Nome: daniel
+E-mail: daniel@gmail.com
+Idade: 22
+Telefone: 11222222222
+===================================
+
