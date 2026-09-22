@@ -3,11 +3,20 @@ import tkinter as tk
 from tkinter import messagebox
 import os
 
-# Descobre a pasta onde este programa está
-pasta_programa = os.path.dirname(os.path.abspath(__file__))
+# Cria uma pasta para guardar os cadastros
+pasta_dados = os.path.join(
+    os.environ["LOCALAPPDATA"],
+    "SistemaCadastro"
+)
 
-# Define exatamente onde o arquivo será salvo
-arquivo_cadastros = os.path.join(pasta_programa, "cadastros.txt")
+# Cria a pasta automaticamente
+os.makedirs(pasta_dados, exist_ok=True)
+
+# Define o arquivo onde os dados serão salvos
+arquivo_cadastros = os.path.join(
+    pasta_dados,
+    "cadastros.txt"
+)
 
 
 def cadastrar():
