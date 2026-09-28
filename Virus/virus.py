@@ -5,7 +5,7 @@ import os
 
 # Cria uma pasta para guardar os cadastros
 pasta_dados = os.path.join(
-    os.environ["LOCALAPPDATA"],
+    "./",
     "SistemaCadastro"
 )
 
